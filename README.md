@@ -21,7 +21,7 @@ let g:submode_mappings = {
       \   },
       \ }
 
-# 2. サブモードを開始するためのマッピング
+" 2. サブモードを開始するためのマッピング
 nnoremap <C-w>+ :call submode#EnterSubmode('winsize')<Enter>+
 nnoremap <C-w>- :call submode#EnterSubmode('winsize')<Enter>-
 nnoremap <C-w>< :call submode#EnterSubmode('winsize')<Enter><
