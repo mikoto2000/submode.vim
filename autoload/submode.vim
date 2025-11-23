@@ -9,6 +9,7 @@ if !exists('g:submode_mappings')
   g:submode_mappings = {}
 endif
 
+# 現在のサブモード
 var submode = ''
 
 # サブモードに切り替える関数
@@ -56,15 +57,4 @@ def SubmodeLoop()
     redraw
   endwhile
 enddef
-
-# サブモードを終了する関数
-def ExitSubmode()
-  submode = ''
-enddef
-
-# 現在のサブモードを取得する関数
-def GetCurrentSubmode(): string
-  return submode
-enddef
-
 
